@@ -15,8 +15,8 @@
 ## 🏆 My Stats:
 
 <div style="display: flex; flex-wrap: wrap;">
-  <img height="175" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token=ACCESS_STATS_SECRET" />
-  <img height="175" alt="Most Used Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token=ACCESS_STATS_SECRET" />
+  <img height="175" alt="GitHub Stats" src="https://https://github-readme-stats-olive-pi.vercel.app//api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token=ACCESS_STATS_SECRET" />
+  <img height="175" alt="Most Used Languages" src="https://https://github-readme-stats-olive-pi.vercel.app//api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token=ACCESS_STATS_SECRET" />
 </div>
 
 ## 🎮 When I'm AFK:
