@@ -15,24 +15,18 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Update README with GitHub Stats
+    - name: Fetch GitHub Stats
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_STATS_SECRET }}
       run: |
-        # Fetch GitHub stats and languages
         stats=$(curl -s "https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token=${ACCESS_TOKEN}")
         langs=$(curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token=${ACCESS_TOKEN}")
-        
         echo "Fetched GitHub Stats:"
         echo "$stats"
         echo "Fetched Languages:"
         echo "$langs"
-
-        # Update README.md with fetched stats and languages
-        sed -i 's|<!-- STATS_PLACEHOLDER -->|'"$(echo "${stats}" | sed 's/[\/&]/\\&/g')"'|g' README.md
-        sed -i 's|<!-- LANGS_PLACEHOLDER -->|'"$(echo "${langs}" | sed 's/[\/&]/\\&/g')"'|g' README.md
-
-
+        sed -i 's|<!-- STATS_PLACEHOLDER -->|![GitHub Stats](https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token='${ACCESS_TOKEN}')|g' README.md
+        sed -i 's|<!-- LANGS_PLACEHOLDER -->|![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token='${ACCESS_TOKEN}')|g' README.md
 
     - name: Commit Changes
       run: |
