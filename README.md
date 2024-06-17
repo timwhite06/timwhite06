@@ -15,8 +15,8 @@
 ## 🏆 My Stats:
 
 <div style="display: flex; flex-wrap: wrap;">
-  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=timwhite06<!-- STATS_PLACEHOLDER -->show_icons=true<!-- STATS_PLACEHOLDER -->count_private=true<!-- STATS_PLACEHOLDER -->theme=dark<!-- STATS_PLACEHOLDER -->include_all_commits=true<!-- STATS_PLACEHOLDER -->token=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)
-  ![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06<!-- LANGS_PLACEHOLDER -->layout=compact<!-- LANGS_PLACEHOLDER -->theme=dark<!-- LANGS_PLACEHOLDER -->count_private=true<!-- LANGS_PLACEHOLDER -->token=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)
+  <!-- STATS_PLACEHOLDER -->
+  <!-- LANGS_PLACEHOLDER -->
 </div>
 
 ## 🎮 When I'm AFK:
