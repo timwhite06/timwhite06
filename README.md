@@ -3,7 +3,6 @@
 
 - 🌱 I’m passionate about Web Development.
 - 📝 I’m aiming to finish 3 personal projects per year (hopefully more).
-- 
 </div>
 
 <div align="center">
