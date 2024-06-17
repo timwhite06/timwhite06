@@ -23,13 +23,9 @@ jobs:
         stats=$(curl -s "https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token=${ACCESS_TOKEN}")
         langs=$(curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token=${ACCESS_TOKEN}")
 
-        # Create the images as files
-        echo $stats > stats.svg
-        echo $langs > langs.svg
-        
         # Update the README.md file
-        sed -i 's|<!-- STATS -->|![GitHub Stats](https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token='${ACCESS_TOKEN}')|g' README.md
-        sed -i 's|<!-- LANGS -->|![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token='${ACCESS_TOKEN}')|g' README.md
+        sed -i 's|<!-- STATS_PLACEHOLDER -->|![GitHub Stats](https://github-readme-stats.vercel.app/api?username=timwhite06&show_icons=true&count_private=true&theme=dark&include_all_commits=true&token='${ACCESS_TOKEN}')|g' README.md
+        sed -i 's|<!-- LANGS_PLACEHOLDER -->|![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=timwhite06&layout=compact&theme=dark&count_private=true&token='${ACCESS_TOKEN}')|g' README.md
 
     - name: Commit changes
       run: |
