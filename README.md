@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Hello World, I'm Tim!</h1>
+<h1>🌍 Hello World, I'm Tim!</h1>
 
 - 🌱 I’m passionate about Web Development.
 - 📝 I’m aiming to finish 3 personal projects per year (hopefully more).
